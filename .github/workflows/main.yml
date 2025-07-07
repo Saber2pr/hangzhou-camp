@@ -1,0 +1,22 @@
+name: Wiki Builder
+
+on:
+  workflow_dispatch:
+  push:
+    branches:
+      - master
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:        
+      - uses: actions/checkout@v4.1.1
+      - uses: Saber2pr/wiki-builder@v0.0.78
+        with:
+          basename: /hangzhou-camp
+          gaId: G-6CLMYWGQBH
+          iconUrl: //saber2pr.top/MyWeb/resource/image/todolist-logo.png
+          expandAllMenu: on
+          title: 杭州骑行露营
+          keywords: 杭州骑行, 杭州露营, 杭州骑行路线, 杭州露营地推荐, 杭州骑行露营, 杭州郊外骑行, 杭州周边露营, 骑行露营攻略, 杭州户外活动, 杭州骑行露营路线推荐
+          description: 探索杭州最美的骑行露营路线，推荐多条适合周末出游的骑行线路与露营地，包括西湖、富阳、千岛湖等周边热门目的地，适合骑行爱好者与露营新手。
