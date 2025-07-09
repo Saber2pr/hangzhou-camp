@@ -13,8 +13,13 @@ jobs:
       - uses: actions/checkout@v4.1.1
       - uses: Saber2pr/wiki-builder@v0.0.79
         with:
+          cname: saber2pr.top
+          ignoreCnameFile: true
           basename: /hangzhou-camp
           gaId: G-6CLMYWGQBH
+          gaAdId: ca-pub-3641373095149503
+          gaAdsTxt: google.com, pub-3641373095149503, DIRECT, f08c47fec0942fa0
+          gaAdsSlotHtml: <ins class="adsbygoogle" style="display:block; text-align:center;" data-ad-layout="in-article" data-ad-format="fluid" data-ad-client="ca-pub-3641373095149503" data-ad-slot="5932086556"></ins>
           iconUrl: //saber2pr.top/MyWeb/resource/image/bicycle.png
           expandAllMenu: on
           title: 杭州骑行露营
